@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Quicksand:wght@300;400&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.main-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.logo, .nav-menu{
+    text-transform: uppercase;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item{
+    flex: 1 0 10%;
+    text-align: center;
+}
+
+.logo a,
+.nav-menu a{
+     display: block;
+     text-decoration: none;
+     padding: 0.8rem;
+}
+
+.logo a{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    margin: 0 auto;
+    color: rgb(24, 21, 21);
+}
+
+.nav-menu a{
+    color: rgb(24, 21, 21);
+    transition: all ease-in-out 0.1s;
+    letter-spacing: 0.2rem;
+}
+
+.nav-menu a:hover{
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.nav-menu a:active{
+    transform: scale(0.9);
+    font-weight: 600;
+}
+
+.shop{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    display: flex;
+    width: 35px; 
+}
+
+.cart a{
+    text-decoration: none;
+    color: rgb(24, 21, 21); 
+}
+
+.social{
+    display: flex;
+    justify-content:center;
+    padding-top: 1rem;
+}
+
+.social-item{
+    line-height: 5rem;
+    padding: 0 2rem;
+}
+
+.social-item a{
+    color: rgb(24, 21, 21);
+    letter-spacing: 0.1rem;
+    transition: all ease-in-out 0.1s;
+}
+
+.social-item a:hover{
+    transform: scale(1.1);
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 2rem 2rem 0 2rem;
+    text-transform: uppercase;
+}
+
+.information-item{
+    line-height: 4.5rem;
+}
+
+.information-item a{
+    text-decoration: none;
+    color: rgb(24, 21, 21);
+    letter-spacing: 0.1rem;
+    transition: all ease-in-out 0.1s;
+}
+
+.information-item a:hover{
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.payment-methods{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.payment-item{
+    padding: 0 1rem;
+}
+
+.payment-item img{
+    width: 18px;
+    height: 10px;
+}
+
+.action{
+    margin-bottom: 30px;
+}
+
+.action form{
+    text-align: center;
+}
+
+.action form input[type="email"]{
+    width: 280px;
+    max-width: 100%;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    margin: 0 5px 20px 0;
+    background: #81818156;
+}
+
+.action form input[type="submit"]{
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background: #afafaf56;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(24, 21, 21); 
+}
+
+.last{
+    text-align: center;
+    padding: 17px;
+    background: #00000081;
+}
+
+.last p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600px;
+    letter-spacing: 2px;
+}
+
+@media (min-width:600px){
+    .header-nav{
+        line-height: 1.5rem;
+    }
+
+    .nav-menu{
+        width: 100%;
+    }
+
+    .nav-item{
+        flex: 1 0 10%;
+    }
+    
+}
+
+@media (min-width:900px){
+    .header-nav{
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        margin: 1rem auto ;
+    }
+
+    .information{
+        margin: 1rem auto ;
+    }
+
+    .nav-menu{
+        width: auto;
+    }
+
+    .logo{
+        margin: 0 0 0 0.3rem;
+    }
+
+}
+
+@media (min-width:1000px){
+    .information{
+        flex-direction: row;
+    }
+    
+    .information-item{
+        padding: 0 1.5rem;
+    }
+
+    .social{
+        margin: 1rem auto;
+    }
+
+}

@@ -1,0 +1,18 @@
+.gallery-portfolio{
+    display: flex;
+    max-width: 1500px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-portfolio img{
+    width: 215px;
+    padding: 5px;
+}
+
+.gallery-portfolio img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}

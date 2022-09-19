@@ -1,0 +1,37 @@
+.shop{
+    width: auto;    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+
+.box{
+    padding: 10px;
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    line-height: 1.3rem;
+}
+
+.box img{
+    width: 215px;
+}
+
+.box img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.box h4{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.box .fa-cart-shopping{
+    font-size: 14px;
+}
+

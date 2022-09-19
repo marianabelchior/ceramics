@@ -1,0 +1,35 @@
+.about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 100px 40px 100px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.about h1{
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.gallery-about{
+    display: flex;
+    max-width: 1500px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-about img{
+    width: 215px;
+    padding: 5px;
+}
+
+.gallery-about img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
